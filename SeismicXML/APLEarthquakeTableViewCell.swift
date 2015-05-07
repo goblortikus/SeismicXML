@@ -30,15 +30,13 @@ class APLEarthquakeTableViewCell: UITableViewCell {
     }
 
     required init(coder aDecoder: NSCoder) {
-  //      fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
     
-   // - (void)configureWithEarthquake:(APLEarthquake *)earthquake;
+    // suspecting some of these below might be stated a bit more cleanly... esp the whole self.dateLabel!.text assignment
     func configureWithEarthquake(earthquake: APLEarthquake) -> () {
         self.locationLabel!.text = earthquake.location
-       // self.dateLabel.text = NSString(format: "%@", self.dateFormatter(earthquake.date))
-        self.dateLabel!.text = NSDateFormatter().stringFromDate(earthquake.date)
+        self.dateLabel!.text = NSString(format: "%@", self.dateFormatter.stringFromDate(earthquake.date)) as String?
         self.magnitudeLabel!.text = NSString(format: "%.1f", earthquake.magnitude) as String
         self.magnitudeImage!.image = self.imageForMagnitude(earthquake.magnitude)
     }
