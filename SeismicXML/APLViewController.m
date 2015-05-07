@@ -49,7 +49,7 @@
 #import "APLParseOperation.h"
 
 #import "APLEarthquake.h"
-#import "APLEarthquakeTableViewCell.h"
+#import "SeismicXML-Swift.h"
 
 // this framework is imported so we can use the kCFURLErrorNotConnectedToInternet error code
 #import <CFNetwork/CFNetwork.h>
