@@ -1,4 +1,4 @@
-NOTE: this is Apple's SeismicXML but with a fix for the CGFloat->Float bug in the demo code, and the APLEarthquakeTableCellView class has been converted from Objective-C to Swift
+NOTE: this is Apple's SeismicXML but with a fix for the CGFloat->Float bug in the demo code, and I have converted the APLEarthquakeTableCellView class from Objective-C to Swift
 -MM
 
 -----
